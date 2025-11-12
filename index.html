@@ -4,6 +4,32 @@
     <title>Stock Chart Views</title>
 </head>
 <body>
-    
+    <form method = 'POST'>
+        <label>Stock Symbol</label>
+        <input type='text' name='symbol'>
+        <br>
+        <label>Chart Type</label>
+        <select name='chart_type'>
+            <option value='Line'>Line Chart</option>
+            <option value='Bar'>Bar Chart</option>
+        </select>
+        <br>
+        <label>Time Series</label>
+        <select name='function_choice'>
+            <option value='1'>Intraday</option>
+            <option value='2'>Daily</option>
+            <option value='3'>Weekly</option>
+            <option value='4'>Monthly</option>
+        </select>
+        <br>
+        <label>Start Date</label>
+        <input type='date' name='start_date'>
+        <br>
+        <label>End Date</label>
+        <input type='date' name='end_date'>
+        <br>
+        <button type="submit">Create Chart</button>
+
+    </form>
 </body>
 </html>
