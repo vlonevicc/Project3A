@@ -13,7 +13,7 @@
     {% endif %}
     
     <form method='POST'>
-        <label>Stock Symbol</label>
+        <label>Stock Symbol (IBM, GOOGL, etc.)</label>
         <input type='text' name='symbol' required>
         <br><br>
         <label>Chart Type</label>
@@ -41,7 +41,7 @@
     
     {% if chart_svg %}
         <div style="margin-top: 30px;">
-            {{ chart_svg|safe }}
+            <img src="{{ chart_svg }}" alt="Stock Chart">
         </div>
     {% endif %}
 </body>
